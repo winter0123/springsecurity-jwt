@@ -1,7 +1,4 @@
 spring:
-#  sql:
-#    init:
-#      mode: always
   datasource:
     url: jdbc:mariadb://localhost:3306/tutorial
     driver-class-name: org.mariadb.jdbc.Driver
