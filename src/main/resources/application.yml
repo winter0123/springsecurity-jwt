@@ -1,4 +1,7 @@
 spring:
+#  sql:
+#    init:
+#      mode: always
   datasource:
     url: jdbc:mariadb://localhost:3306/tutorial
     driver-class-name: org.mariadb.jdbc.Driver
@@ -9,4 +12,8 @@ spring:
     generate-ddl: true
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
+
+logging:
+  level:
+    com.joy.jwt_tutorial: DEBUG #패키지에 대한 loggin level을 쓰는 것임(log를 DEBUG 레벨까지 찍겠다는 의미)
